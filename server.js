@@ -1,15 +1,25 @@
-
 const express = require('express');
-require('./bd.js');
-const routes = require('./index.js');
 const app = express();
+
+const funcionarioRoutes = require('./funcionario.js');
+const userRoutes = require('./user.js');
+const produtoRoutes = require('./produto.js');
+
+
+require('./bd.js');
+
 app.use(express.json());
-app.use(routes);
+
+app.use(funcionarioRoutes);
+app.use(userRoutes);
+app.use(produtoRoutes);
 
 app.get('/', (req, res) => {
   res.send('Bem-vindo ao meu servidor Express!');
 });
 
-app.listen(3000, () => {
-  console.log('Servidor Express rodando na porta 3000');
-});  
+
+const PORT = 3000;
+app.listen(PORT, () => {
+  console.log(`Servidor Express rodando na porta ${PORT}`);
+});
