@@ -8,7 +8,7 @@ const routes = express.Router();
 const funcionarioSchema = new mongoose.Schema({
     nome: String,
     cargo: String,
-    salario: Number
+    salario: Number 
 });
 const Funcionario = mongoose.model('Funcionario', funcionarioSchema);
 

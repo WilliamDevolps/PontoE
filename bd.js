@@ -6,7 +6,7 @@ const dbName = 'Api';
 
 async function connectToMongoDB() {
     let client;
-
+ 
     try {
         
         await mongoose.connect(url);
@@ -19,4 +19,4 @@ async function connectToMongoDB() {
     }
 }
 
-connectToMongoDB();
+connectToMongoDB();  
