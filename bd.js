@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 
-const url = 'mongodb+srv://williamrocha2002:CFXNd0CYKbGWZHWu@api.gh7q6bi.mongodb.net/?retryWrites=true&w=majority&appName=API'; 
+const url = 'mongodb+srv://williamrocha2002:<Password>.gh7q6bi.mongodb.net/?retryWrites=true&w=majority&appName=API'; 
 
 const dbName = 'Api'; 
 
